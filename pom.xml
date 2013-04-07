@@ -9,7 +9,7 @@
   <name>android-scala-test</name>
 
   <properties>
-    <scala.version>2.9.2</scala.version>
+    <scala.version>2.10.0</scala.version>
   </properties>
 
   <dependencies>
@@ -30,14 +30,14 @@
     <repository>
       <id>scala-tools.org</id>
       <name>Scala-tools Maven2 Repository</name>
-      <url>http://www.scala-tools.org/repo-releases</url>
+      <url>https://oss.sonatype.org/content/groups/scala-tools/</url>
     </repository>
   </repositories>
   <pluginRepositories>
     <pluginRepository>
       <id>scala-tools.org</id>
       <name>Scala-tools Maven2 Repository</name>
-      <url>http://www.scala-tools.org/repo-releases</url>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </pluginRepository>
   </pluginRepositories>
 
@@ -100,14 +100,14 @@
       <plugin>
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
         <artifactId>android-maven-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.5.1</version>
         <configuration>
           <androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>
           <assetsDirectory>${project.basedir}/assets</assetsDirectory>
           <resourceDirectory>${project.basedir}/res</resourceDirectory>
           <nativeLibrariesDirectory>${project.basedir}/src/main/native</nativeLibrariesDirectory>
           <sdk>
-            <platform>8</platform>
+            <platform>14</platform>
           </sdk>
           <deleteConflictingFiles>true</deleteConflictingFiles>
           <undeployBeforeDeploy>true</undeployBeforeDeploy>
