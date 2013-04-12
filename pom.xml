@@ -3,10 +3,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.rrsllc</groupId>
-  <artifactId>android-scala-test</artifactId>
+  <artifactId>scala-on-android-example</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>apk</packaging>
-  <name>android-scala-test</name>
+  <name>scala-on-android-exmaple</name>
 
   <properties>
     <scala.version>2.10.0</scala.version>
