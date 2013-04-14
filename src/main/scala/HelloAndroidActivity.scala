@@ -1,29 +1,23 @@
-package com.rrsllc.android.scalaTest
+package com.detroitlabs.thinks.you.are.cool
 
 import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 
-import com.rrsllc.android.scalaTest.R
+import com.detroitlabs.thinks.you.are.cool.R
 import android.widget.TextView
 
 object HelloAndroidActivity extends Activity {
-  val TAG = "android-scala-test"
+  val TAG = "scala-on-android-template"
 }
 
 class HelloAndroidActivity extends Activity {
   var helloTextView: Option[TextView] = None
 
-  /**
-   * Called when the activity is first created.
-   * @param savedInstanceState If the activity is being re-initialized after
-   * previously being shut down then this Bundle contains the data it most
-   * recently supplied in onSaveInstanceState(Bundle). <b>Note: Otherwise it is null.</b>
-   */
   override def onCreate(savedInstanceState: Bundle): Unit = {
     super.onCreate(savedInstanceState)
     
-    Log.i(HelloAndroidActivity.TAG, "onCreate with Scala!!!!")
+    Log.i(HelloAndroidActivity.TAG, "onCreate")
     setContentView(R.layout.main)
 
     helloTextView = Option(findViewById(R.id.helloTextView).asInstanceOf[TextView])
